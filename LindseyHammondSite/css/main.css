@@ -1,0 +1,9 @@
+header {
+    background-image: url('../images/headerBG.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-item {
+    border: 1px white solid;
+}
