@@ -11,14 +11,16 @@
 
     <!--Header-->
     <header>
-      <div class="container col-xxl-8 px-4">
+      <div class="container col-xxl-8">
         <div class="row flex-lg-row-reverse align-items-center">
+          <!--Image-->
           <div class="col-10 col-sm-8 col-lg-6 mx-auto">
             <img class="img-fluid" src="/images/lindseyHeader.png" alt="Lindsey waist up photo" width="730px" height="879px">
           </div>
+          <!--Text-->
           <div class="col-lg-6 mt-0 pt-2 bg-dark">
-            <h1 class="display-5 fw-bold lh-1 text-danger">Lindsey Hammond</h1>
-            <p class="lead text-danger">I am a full-time Real Estate Agent, Investor, and Home Flipper and I’m here to help make your home <span class="text-primary fw-bold">DREAMS</span> a <span class="text-secondary fw-bold">REALITY!</span></p>
+            <h1 class="display-5 fw-bold lh-1 text-tertiary text-center">Lindsey Hammond</h1>
+            <p class="lead text-white text-center">I am a full-time Real Estate Agent, Investor, and Home Flipper and I’m here to help make your home <span class="text-primary fw-bold">DREAMS</span> a <span class="text-tertiary fw-bold">REALITY!</span></p>
           </div>
         </div>
       </div>
@@ -26,231 +28,434 @@
 
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
-      <div class="container-fluid">
+      <div class="container">
+
+        <!--Toggle Button-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+        
+        <!--Nav Items-->
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="videos.html">Videos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="flips.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tools</a>
+              <a class="nav-link" href="tools.html">Tools</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Property Search</a>
+              <a class="nav-link" href="properties.html">Property Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!--Social-->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="social-icon pe-1">
+              <a href="https://www.facebook.com/LindseyHammondrealestate/" target="_blank"><img src="/images/icons/facebook.png" width="40px" height="40px" alt="Facebook"></a>
+            </li>
+            <li class="social-icon pe-1">
+              <a href="https://www.instagram.com/homeresucitation/" target="_blank"><img src="/images/icons/Instagram.png" width="40px" height="40px" alt="Instagram"></a>
+            </li>
+            <li class="social-icon pe-1">
+              <a href="https://www.facebook.com/LindseyHammondrealestate/" target="_blank"><img src="/images/icons/Messenger.png" width="40px" height="40px" alt="Messenger"></a>
+            </li>
+            <li class="social-icon pe-1">
+              <a href="https://www.youtube.com/channel/UCRErRYVWMMVocUBAqkQVuPg" target="_blank"><img src="/images/icons/Youtube.png" width="40px" height="40px" alt="YouTube"></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!--Blogs-->
-    <section class="container">
-      <h2 class="text-center">Recent Blogs</h2>
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title">Airbnb Pros and Cons</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section>
+      <div class="container py-4">
+        <h2 class="text-center text-secondary pb-4">Recent Blogs</h2>
+
+        <!--Carousel Below Large view-->
+        <div class="d-lg-none">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <article class="col-3-lg">
+                  <div class="card">
+                    <img src="images/airbnbnMobile.jpg" class="card-img-top img-fluid" width="354px" height="339px" alt="Lindsey Airbnb Pros and Cons">
+                    <div class="card-body">
+                      <h3 class="card-title">Airbnb Pros and Cons</h3>
+                      <p class="card-text">Air BNB gets 3 million views a day on their website. What if you could use just a portion of that publicity and make money from it? In this blog I am going to break down the Pros and the Cons of investing in an Airbnb.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <article class="col-3-lg">
+                  <div class="card">
+                    <img src="images/homeSecurityMobile.jpg" class="card-img-top img-fluid" width="354px" height="339px" alt="Burglar versus Lindsey">
+                    <div class="card-body">
+                      <h3 class="card-title">Home Security Tips and Tricks for Buyers</h3>
+                      <p class="card-text">According to the FBI burglary happens every 20.9 seconds. Your home, especially with everyone inside, is your most valuable asset. Here are some home security tips and tricks to try for each stage in the home buying process.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <article class="col-3-lg">
+                  <div class="card">
+                    <img src="images/hotMarketMobile.jpg" class="card-img-top img-fluid" width="354px" height="339px" alt="Lindsey next to burning For Sale sign">
+                    <div class="card-body">
+                      <h3 class="card-title">Costly Mistakes When Selling Your Home in a Hot Market</h3>
+                      <p class="card-text">Are you thinking of selling in today’s market? Sellers are making some huge mistakes that are costing them major money. In this blog I am going to give you all the tips to avoid these traps and walk away with the most money!</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="col-3-lg">
+                  <div class="card">
+                    <img src="images/newResaleMobile.jpg" class="card-img-top img-fluid" width="354px" height="339px" alt="New construction versus resale homes">
+                    <div class="card-body">
+                      <h3 class="card-title">Buying a New Construction vs Resale Home</h3>
+                      <p class="card-text">New is always better right? Sometimes that’s not the case? I am going to dive into the pros and cons of both new construction and typical resale homes.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      </article>
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title">Home Security Tips and Tricks for Buyers</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        
+        <!--Large view and higher-->
+        <div class="d-none d-lg-flex">
+
+          <!--Featured Article-->
+          <div>
+            <article>
+              <div class="card me-1 bg-secondary">
+                <img src="images/airbnbWeb.jpg" class="card-img-top img-fluid p-2" height="360px" width="641px" alt="Lindsey Airbnb Pros and Cons">
+                <div class="card-body">
+                  <h3 class="card-title text-white">Airbnb Pros and Cons</h3>
+                  <p class="card-text text-tertiary">Air BNB gets 3 million views a day on their website. What if you could use just a portion of that publicity and make money from it? In this blog I am going to break down the Pros and the Cons of investing in an Airbnb.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!--Recent Articles-->
+          <div class="col-8">
+            <article>
+              <div class="card mb-1 bg-secondary" style="max-height:14.125rem">
+                <div class="d-inline-flex">
+                  <img src="images/homeSecurityWeb.jpg" class="card-img-start p-2" height="226px" width="402px" alt="Burglar versus Lindsey">
+                  <div class="card-body">
+                    <h3 class="card-title text-white">Home Security Tips and Tricks for Buyers</h3>
+                    <p class="card-text text-tertiary">According to the FBI burglary happens every 20.9 seconds. Your home, especially with everyone inside, is your most valuable asset. Here are some home security tips and tricks to try for each stage in the home buying process.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card mb-1 bg-secondary" style="max-height:14.125rem">
+                <div class="d-inline-flex">
+                  <img src="images/hotMarketWeb.jpg" class="card-img-start p-2" height="226px" width="402px" alt="Lindsey next to burning For Sale sign">
+                  <div class="card-body">
+                    <h3 class="card-title text-white">Costly Mistakes When Selling Your Home in a Hot Market</h3>
+                    <p class="card-text text-tertiary">Are you thinking of selling in today’s market? Sellers are making some huge mistakes that are costing them major money. In this blog I am going to give you all the tips to avoid these traps and walk away with the most money!</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card bg-secondary" style="max-height:14.125rem">
+                <div class="d-inline-flex">
+                  <img src="images/newResaleWeb.jpg" class="card-img-start p-2" height="226px" width="402px" alt="New construction versus resale homes">
+                  <div class="card-body">
+                    <h3 class="card-title text-white">Buying a New Construction vs Resale Home</h3>
+                    <p class="card-text text-tertiary">New is always better right? Sometimes that’s not the case? I am going to dive into the pros and cons of both new construction and typical resale homes.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </article>
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title">Costly Mistakes When Selling Your Home in a Hot Market</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </article>
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title">Buying a New Construction vs Resale Home</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </article>
+      </div>
     </section>
 
     <!--Videos-->
-    <section class="container">
-      <h2 class="text-center">Recent Videos</h2>
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title">Real Estate Can PROTECT You and Your Money From Inflation</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section class="bg-secondary">
+      <div class="container py-4">
+        <h2 class="text-center text-tertiary pb-4">Recent Videos</h2>
+
+        <!--Carousel Below Large view-->
+        <div class="d-lg-none">
+          <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <article class="col-3-lg">
+                  <div class="card">
+                    <img src="images/inflationWeb.jpg" class="card-img-top img-fluid" width="354px" height="339px" alt="Lindsey holding burning money">
+                    <div class="card-body">
+                      <h3 class="card-title">Real Estate Can PROTECT You and Your Money From Inflation</h3>
+                      <p class="card-text">Unless you are living under a rock, you know how bad inflation is! It is affecting everything and this means your dollar is worth less and less each day. However, if you make a good investment in real estate, it can protect you and your money from inflation! In this video I give you 4 ways real estate can protect you. I will also tell you which ones are the most risky investments and which are the least risky investments to make. </p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <article class="col-3-lg">
+                  <div class="card">
+                    <img src="images/moneyPitWeb.jpg" class="card-img-top img-fluid" width="354px" height="339px" alt="Burglar versus Lindsey">
+                    <div class="card-body">
+                      <h3 class="card-title">Investing in AirBNB Can Cost You THOUSANDS!!</h3>
+                      <p class="card-text">AirBNB can be a very profitable investment if it’s done correctly, but do not invest in short-term rentals until you have covered these bases. I will walk you, step-by-step, through the process of how I made this decision on one of my homes.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <article class="col-3-lg">
+                  <div class="card">
+                    <img src="images/rentSellWeb.jpg" class="card-img-top img-fluid" width="354px" height="339px" alt="Lindsey next to burning For Sale sign">
+                    <div class="card-body">
+                      <h3 class="card-title">Flip Houses or Rent? Which Will Make You More Money</h3>
+                      <p class="card-text">With todays shifting real estate market, now is the perfect time for you to buy a real estate investment. I have flipped house and had several rentals over the last 10 years, so I will give you the real deal on the pros and cons of renting vs flipping and which one will make you more money in the long run!</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="col-3-lg">
+                  <div class="card">
+                    <img src="images/mobileHomeWeb.jpg" class="card-img-top img-fluid" width="354px" height="339px" alt="New construction versus resale homes">
+                    <div class="card-body">
+                      <h3 class="card-title">Investing in Mobile Homes Could NET You Thousands</h3>
+                      <p class="card-text">Most investors do not think of mobile homes as a potential investment. I flipped my first mobile home and I will tell you exactly how much money I made, how much work it was, and struggles that you may face specific to mobile homes so you can decide if investing in a mobile home is a good strategy or not.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      </article>
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title">Investing In AirBNB Can Cost You THOUSANDS!!</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        
+        <!--Large view and higher-->
+        <div class="d-none d-lg-flex flex-lg-row-reverse">
+
+          <!--Featured Video-->
+          <div id="featured-article" style="max-height:51rem">
+            <article>
+              <div class="card ms-1">
+                <img src="images/inflationWeb.jpg" class="card-img-top img-fluid p-1" height="360px" width="641px" alt="Lindsey Airbnb Pros and Cons">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">Real Estate Can PROTECT You and Your Money From Inflation</h3>
+                  <p class="card-text text-secondary">Unless you are living under a rock, you know how bad inflation is! It is affecting everything and this means your dollar is worth less and less each day. However, if you make a good investment in real estate, it can protect you and your money from inflation! In this video I give you 4 ways real estate can protect you. I will also tell you which ones are the most risky investments and which are the least risky investments to make.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!--Recent Videos-->
+          <div class="col-8" id="recent-articles" style="max-height:51rem">
+            <article>
+              <div class="card mb-1" style="max-height:14.125rem">
+                <div class="d-inline-flex">
+                  <img src="images/moneyPitWeb.jpg" class="card-img-start" height="226px" width="402px" alt="Burglar versus Lindsey">
+                  <div class="card-body">
+                    <h3 class="card-title text-primary">Investing in AirBNB Can Cost You THOUSANDS!!</h3>
+                    <p class="card-text text-secondary">AirBNB can be a very profitable investment if it’s done correctly, but do not invest in short-term rentals until you have covered these bases. I will walk you, step-by-step, through the process of how I made this decision on one of my homes.AirBNB can be a very profitable investment if it’s done correctly, but do not invest in short-term rentals until you have covered these bases. I will walk you, step-by-step, through the process of how I made this decision on one of my homes.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card mb-1" style="max-height:14.125rem">
+                <div class="d-inline-flex">
+                  <img src="images/rentSellWeb.jpg" class="card-img-top" height="226px" width="402px" alt="Lindsey next to burning For Sale sign">
+                  <div class="card-body">
+                    <h3 class="card-title text-primary">Flip Houses or Rent? Which Will Make You More Money</h3>
+                    <p class="card-text text-secondary">With todays shifting real estate market, now is the perfect time for you to buy a real estate investment. I have flipped house and had several rentals over the last 10 years, so I will give you the real deal on the pros and cons of renting vs flipping and which one will make you more money in the long run!</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="max-height:14.125rem">
+                <div class="d-inline-flex">
+                  <img src="images/mobileHomeWeb.jpg" class="card-img-top" height="226px" width="402px" alt="New construction versus resale homes">
+                  <div class="card-body">
+                    <h3 class="card-title text-primary">Investing in Mobile Homes Could NET You Thousands</h3>
+                    <p class="card-text text-secondary">Most investors do not think of mobile homes as a potential investment. I flipped my first mobile home and I will tell you exactly how much money I made, how much work it was, and struggles that you may face specific to mobile homes so you can decide if investing in a mobile home is a good strategy or not.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </article>
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title">Flip Houses or Rent? Which Will Make You More Money</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </article>
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title">Investing in Mobile Homes Could NET You Thousands!</h3>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </article>
+      </div>
     </section>
 
     <!--Flips-->
-    <section class="container">
-      <h2 class="text-center">Recent Flips</h2>
-      <!--Carousel-->
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="..." class="d-block w-100" alt="...">
+    <section>
+      <div class="container py-4">
+        <h2 class="text-center text-secondary">Recent Flips</h2>
+
+        <!--Carousel-->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
     <!--Testimonials-->
-    <section>
-      <h2 class="text-center">Testimonials</h2>
-      <!--Block Quotes-->
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <!--Quote-->
+    <section class="bg-secondary">
+      <div class="container py-4">
+        <h2 class="text-center text-tertiary">Testimonials</h2>
+
+        <!--Block Quotes-->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <!--Quote-->
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <!--Quote-->
+            </div>
+            <div class="carousel-item">
+              <!--Quote-->
+            </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
-            <!--Quote-->
-          </div>
-          <div class="carousel-item">
-            <!--Quote-->
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
     <!--Footer-->
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <p class="text-muted">© 2022</p>
-      </div>
-  
-      <div class="col mb-3">
-  
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-    </footer>
+    <div class="bg-primary">
+      <footer class="container pt-5">
+        <div class="row">
+          <div class="col-md-5 mb-3 border-end">
+            <form>
+              <h3 class="text-tertiary">Subscribe to stay up to date!</h3>
+              <p class="text-white">Enter your email to receive weekly updates on the market, investing opportunities, blog posts, and my latest videos!</p>
+              <div class="d-flex flex-column gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">SUBSCRIBE</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-6 col-md-3 mb-3 border-end">
+            <h3 class="text-tertiary text-center">Sitemap</h3>
+            <div class="d-flex flex-row justify-content-center">
+              <ul class="nav flex-column">
+                <li>
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="videos.html">Videos</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="flips.html">Gallery</a>
+                </li>
+              </ul>
+              <ul class="nav flex-column">
+                <li>
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="tools.html">Tools</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="properties.html">Property Search</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="col-6 col-md-4 mb-3">
+            <h3 class="text-tertiary">Contact Me</h3>
+            <address class="text-white mt-3">
+              610 Broad Elk<br>
+              San Antonio, Texas<br>
+              78253<br>
+              <p class="mt-2">Email: <a class="text-white" href="mailto:lindseyhammond11@gmail.com">lindseyhammond11@gmail.com</a></p>
+            </address>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>

@@ -7,3 +7,15 @@ header {
 .nav-item {
     border: 1px white solid;
 }
+
+.social-icon {
+    cursor: pointer;
+}
+
+.flex-column > li > .nav-link {
+    color: #fff;
+}
+
+.flex-column > li > .nav-link:hover {
+    color: #ED8BF3;
+}
