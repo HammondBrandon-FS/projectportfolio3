@@ -14,7 +14,7 @@
             <div class="container">
     
                 <!--Toggle Button-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             
@@ -66,24 +66,27 @@
         </nav>
 
         <!--Section-->
-        <div class="bg-secondary py-5">
-            <section class="container bg-white border py-3">
+        <div class="bg-secondary">
+            <div class="d-md-none py-2">
+                <img class="img-fluid" src="images/linzWindow.jpg" width="812" height="609" alt="Lindsey looking out a window">
+            </div>
+            <section class="container py-3">
                 <form class="d-flex flex-column align-items-center">
-                    <h2 class="text-center text-tertiary">Contact Form</h2>
-                    <p class="text-center text-secondary">Please fill out the fields below and I’ll reach out to you as soon as possible!</p>
-                    <div class="w-50">
-                        <label class="text-tertiary fs-5" for="email">Email</label>
-                        <input class="form-control" id="email" type="email">
+                    <h2 class="text-center text-tertiary">Contact Me!</h2>
+                    <p class="text-white fs-5">Please fill out the fields below and I’ll reach out to you as soon as possible!</p>
+                    <div class="w-75">
+                        <label class="visually-hidden" for="email">Email</label>
+                        <input class="form-control-s my-2" id="email" type="email" placeholder="Email Address">
                     </div>
-                    <div class="w-50">
-                        <label class="text-tertiary fs-5" for="subject">Subject</label>
-                        <input class="form-control" id="subject" type="text">
+                    <div class="w-75">
+                        <label class="visually-hidden" for="subject">Subject</label>
+                        <input id="form-small" class="form-control-s my-2" id="subject" type="text" placeholder="Subject">
                     </div>
-                    <div class="w-50">
-                        <label class="text-tertiary fs-5" for="message">Message</label>
-                        <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+                    <div class="w-75">
+                        <label class="visually-hidden" for="message">Message</label>
+                        <textarea id="form-small" class="form-control-s my-2" name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
                     </div>
-                    <button class="btn btn-primary mt-3">SEND</button>
+                    <button class="btn btn-primary mt-2">SEND</button>
                 </form>
             </section>
         </div>

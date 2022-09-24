@@ -2144,7 +2144,7 @@ progress {
   color: #6c757d;
 }
 
-.form-control {
+.form-control, .form-control-s {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -2162,17 +2162,17 @@ progress {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control {
+  .form-control, .form-control-s {
     transition: none;
   }
 }
-.form-control[type=file] {
+.form-control[type=file], .form-control-s[type=file] {
   overflow: hidden;
 }
 .form-control[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-.form-control:focus {
+.form-control:focus, .form-control-s:focus {
   color: #1D1855;
   background-color: #fff;
   border-color: #ED8BF3;

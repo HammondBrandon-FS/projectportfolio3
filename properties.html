@@ -14,7 +14,7 @@
             <div class="container">
     
                 <!--Toggle Button-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             
@@ -67,18 +67,38 @@
 
         <!--Section-->
         <main class="bg-secondary">
-            <div class="container py-5 position-relative">
+
+            <!--Larger Views-->
+            <div class="container py-5 position-relative d-md-block d-none">
+                <!--Header Image-->
                 <img class="img-fluid" src="images/prop-search.jpg" width="1640" height="725" alt="Houses in a colorful town">
+
+                <!--Address Search-->
                 <div class="position-absolute top-50 end-0 w-50 d-flex translate-middle">
                     <label class="visually-hidden" for="search">Property Search</label>
                     <input class="form-control" id="search" type="text" placeholder="Address">
                     <button class="btn btn-primary">SEARCH</button>
                 </div>
             </div>
-        </main>
-        <!--Header Image-->
-        <!--Address Search-->
 
+            <!--Smaller Views-->
+            <div class="d-md-none">
+                <!--Header Image-->
+                <img class="img-fluid py-2" src="images/prop-search.jpg" width="1640" height="725" alt="Houses in a colorful town">
+
+                <!--Address Search-->
+                <div class="bg-white">
+                    <div class="container d-flex flex-column align-items-center">
+                        <h2 class="text-primary text-center py-4">Find Homes for Sale!</h2>
+                        <p class="text-secondary fs-5 pb-4">Whether you are looking to buy or invest, my home search tool is perfect for finding the property you are looking for!</p>
+                        <label class="visually-hidden" for="search">Property Search</label>
+                        <input class="form-control" id="search" type="text" placeholder="Address, City, or Zip">
+                        <button class="btn btn-primary w-25 my-4">SEARCH</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
         <!--Footer-->
         <div class="bg-primary">
             <footer class="container pt-5">

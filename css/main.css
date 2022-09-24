@@ -53,6 +53,20 @@ header {
     border: 1px white solid;
 }
 
+.nav-link {
+    font-size: 1.15rem;
+}
+
+.form-control-s {
+    color: #1D1855;
+    background-color: #fff;
+  }
+
+.navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xxl .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
 .social-icon {
     cursor: pointer;
 }
