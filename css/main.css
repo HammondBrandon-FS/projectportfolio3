@@ -25,6 +25,23 @@ header {
     border: 1px solid #ED8BF3;
 }
 
+.form-control::placeholder {
+    color: #ED8BF3;
+    opacity: 1;
+}
+
+.btn-primary {
+    color: #1D1855;
+    background-color: #ED8BF3;
+    border-color: #1D1855;
+}
+
+.btn-primary:hover {
+    color: #ED8BF3;
+    background-color: #1D1855;
+    border-color: #ED8BF3;
+}
+
 .text-primary {
     color: #584FD1 !important;
 }
@@ -47,6 +64,21 @@ header {
 
 #tool-container {
     width: 98.2%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #584FD1;
+    background-color: #fff;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #584FD1;
+  background-color: #fff;
 }
 
 .nav-item {
